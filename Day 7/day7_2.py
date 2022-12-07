@@ -31,7 +31,7 @@ home_dir = calculate_size(instructions[1:])
 space_available = 70000000 - home_dir
 
 lowest_dir = home_dir
-for instruction in instructions[1:]:
+for instruction in instructions:
     
     if '$ cd' in instruction and ".." not in  instruction:
         print(instruction)
